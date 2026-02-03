@@ -4,5 +4,23 @@
 # rails runner code-along/0-classes.rb
 
 # String Class
+bens_favorite_food = "tacos"
+jims_favorite_food = "mac and cheese"
+
+puts bens_favorite_food.class
+puts jims_favorite_food.class
+
+# puts String.methods
 
 # String Methods
+
+class Dog
+
+  def speak
+    puts "Woof!"
+  end
+
+end
+
+rugs = Dog.new
+puts rugs.speak
