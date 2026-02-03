@@ -61,5 +61,17 @@ p apple
 puts apple["url"]
 
 # 6. update a row's column value
+apple["url"] = "https://www.apple.com"
+p apple
+apple.save
+
+p Company.find_by({"name" => "Apple"})
 
 # 7. delete a row
+apple.destroy
+puts "Companies: #{Company.all.count}"
+
+expected_count_of_companies = 2
+if expected_count_of_companies != Company.all.count
+  raise "not equal"
+end
