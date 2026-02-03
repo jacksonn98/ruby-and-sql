@@ -1,0 +1,2 @@
+class Ox < ApplicationRecord
+end
